@@ -1,0 +1,112 @@
+:root {
+  --white: white;
+  --dark-blue: #13293d;
+  --black: black;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  min-width: 300px;
+}
+
+header nav a {
+  color: turquoise;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--white);
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 250%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+main {
+  max-width: 96%;
+  margin: 2% auto;
+}
+
+.avatar {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+}
+
+.thumbnail {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.big-box {
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.container:hover .thumbnail {
+  transform: scale(1.1);
+}
+
+article {
+  display: inline-block;
+  padding: 2%;
+  border: 2px solid var(--dark-blue);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--white);
+}
+
+.container:hover .overlay {
+  opacity: .5;
+}
+
+.text {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
