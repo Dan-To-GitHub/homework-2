@@ -1,4 +1,4 @@
-#Homework 2
+# Homework 2
 
 This is my portfolio for Homework 2 in the Berkeley Coding Bootcamp. This is an HTML-developed website that displays my past works as well as my contact links.
 
